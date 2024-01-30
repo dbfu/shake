@@ -16,9 +16,9 @@ function App() {
   useEffect(() => {
     if (window.DeviceOrientationEvent) {
       window.addEventListener(
-        "deviceorientation",
+        "devicemotion",
         deviceMotionHandler,
-        true
+        false
       );
     } else {
       alert("该浏览器不支持摇一摇功能");
